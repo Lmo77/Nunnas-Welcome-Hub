@@ -664,7 +664,7 @@ document.querySelectorAll(".nn-acc-img").forEach(img=>{
       <div class="nn-card-dot" style="background:var(--teal);"></div>
       <h3>WhatsApp groups</h3>
       <p>You have been automatically added to your level WhatsApp group before day one &mdash; you don&rsquo;t need to do anything to join. There are six groups in total:</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0;">
         <div style="background:rgba(117,212,208,0.1);border:1px solid rgba(117,212,208,0.25);border-radius:10px;padding:12px 14px;text-align:center;">
           <div style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--teal);font-size:15px;">A1 Group</div>
           <div style="font-size:12px;color:var(--muted);margin-top:2px;">Beginners</div>
@@ -851,8 +851,13 @@ document.querySelectorAll(".nn-acc-img").forEach(img=>{
         align-items: center;
         justify-content: center;
       }
+      /* Centre any orphan in the last row */
+      .nn-vgrid .nn-vcard:last-child:nth-child(3n+1) {
+        grid-column: 2;
+      }
       @media(max-width:600px) {
         .nn-vgrid { grid-template-columns: repeat(2, 1fr); }
+        .nn-vgrid .nn-vcard:last-child:nth-child(3n+1) { grid-column: auto; }
       }
     </style>
 
@@ -938,6 +943,19 @@ document.querySelectorAll(".nn-acc-img").forEach(img=>{
     <p class="nn-eyebrow">Section 8</p>
     <h2>Your resource pack</h2>
     <p class="nn-lead">Everything below is yours to use, save, and refer back to whenever you need it. All resources are Nunnas-branded and produced for your level.</p>
+    <style>
+      .nn-resources {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .nn-resources .nn-resource:last-child:nth-child(3n+1) { grid-column: 2; }
+      .nn-resources .nn-resource:last-child:nth-child(3n+2) { grid-column: 2 / span 1; justify-self: center; width: 100%; }
+      @media(max-width:600px) {
+        .nn-resources { grid-template-columns: repeat(2, 1fr); }
+        .nn-resources .nn-resource:last-child:nth-child(3n+1) { grid-column: auto; }
+      }
+    </style>
     <div class="nn-resources">
       
       <div class="nn-resource">
