@@ -142,6 +142,21 @@ a:hover{text-decoration:underline;}
 @media(max-width:400px){
   .nn-team-grid{grid-template-columns:1fr;}
 }
+
+/* ── RESOURCE CARDS ─────────────────────────────────── */
+.nn-res-card{background:var(--white);border-radius:14px;border:1px solid var(--border);overflow:hidden;margin-bottom:0;}
+.nn-res-trigger{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:18px 20px;text-align:left;transition:background 0.2s;}
+.nn-res-trigger:hover{background:rgba(117,212,208,0.04);}
+.nn-res-trigger[aria-expanded="true"]{background:rgba(48,72,97,0.03);border-bottom:1px solid var(--border);}
+.nn-res-icon{flex-shrink:0;width:38px;height:38px;border-radius:10px;background:rgba(117,212,208,0.12);display:flex;align-items:center;justify-content:center;font-size:18px;}
+.nn-res-info{flex:1;}
+.nn-res-info h4{font-family:"Nunito",sans-serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+.nn-res-info p{font-size:12px;color:var(--muted);}
+.nn-res-chevron{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--linen);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);transition:transform 0.3s;}
+.nn-res-trigger[aria-expanded="true"] .nn-res-chevron{transform:rotate(180deg);}
+.nn-res-body{display:none;padding:0;}
+.nn-res-body.open{display:block;}
+.nn-res-coming{padding:24px 20px;font-size:14px;color:var(--muted);font-style:italic;}
 </style>
 </head>
 <body>
@@ -966,111 +981,360 @@ document.querySelectorAll(".nn-acc-img").forEach(img=>{
   <div class="nn-section-inner">
     <p class="nn-eyebrow">Section 8</p>
     <h2>Your resource pack</h2>
-    <p class="nn-lead">Everything below is yours to use, save, and refer back to whenever you need it. All resources are Nunnas-branded and produced for your level.</p>
-    <style>
-      .nn-resources {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-      }
-      .nn-resources .nn-resource:last-child:nth-child(3n+1) { grid-column: 2; }
-      .nn-resources .nn-resource:last-child:nth-child(3n+2) { grid-column: 2 / span 1; justify-self: center; width: 100%; }
-      @media(max-width:600px) {
-        .nn-resources { grid-template-columns: repeat(2, 1fr); }
-        .nn-resources .nn-resource:last-child:nth-child(3n+1) { grid-column: auto; }
-      }
-    </style>
-    <div class="nn-resources">
+    <p class="nn-lead">Everything below is yours to use, save, and refer back to whenever you need it. Click any resource to open it &mdash; then download and print it to annotate with your own notes as you study.</p>
+    <div style="display:flex;flex-direction:column;gap:12px;">
       
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Grammar reference</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
-        </div>
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128266;</div>
+          <div class="nn-res-info">
+            <h4>Pronunciation guide</h4>
+            <p>Sounds, stress and common mistakes for Spanish speakers</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          
+<div style="padding:24px 20px;">
+
+  <div style="background:#304861;border-radius:12px;padding:20px 22px;margin-bottom:20px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:8px;">
+      <div>
+        <div style="font-family:'Nunito',sans-serif;font-size:18px;font-weight:800;color:white;">Pronunciation guide</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:3px;">Written especially for Spanish speakers</div>
       </div>
-      
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Irregular verb list</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
-        </div>
+      <button onclick="window.print()" style="display:flex;align-items:center;gap:6px;background:#75D4D0;color:#304861;font-family:'Nunito',sans-serif;font-size:12px;font-weight:800;padding:8px 16px;border-radius:8px;border:none;cursor:pointer;">
+        &#128196; Download &amp; print
+      </button>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,0.35);font-style:italic;">Audio links open Cambridge Dictionary. Luke's own recordings coming soon. Click any underlined word to hear it.</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Sounds that don't exist in Spanish</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:24px;">
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;">
+      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">TH</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Two sounds</div>
+      <div style="font-size:13px;color:var(--muted);line-height:2;">
+        <a href="https://dictionary.cambridge.org/pronunciation/english/think" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">think</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/thank" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">thank</a> — soft<br>
+        <a href="https://dictionary.cambridge.org/pronunciation/english/the" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">the</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/this" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">this</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/that" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">that</a> — voiced<br>
+        <span style="font-size:11px;">Tongue touches teeth</span>
       </div>
-      
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Regular verb list</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
-        </div>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;">
+      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">W</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Not like V</div>
+      <div style="font-size:13px;color:var(--muted);line-height:2;">
+        <a href="https://dictionary.cambridge.org/pronunciation/english/water" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">water</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/work" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">work</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/week" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">week</a><br>
+        <span style="font-size:11px;">Round lips as if whistling</span>
       </div>
-      
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Pronunciation guide</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
-        </div>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;">
+      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">H</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Breathe out</div>
+      <div style="font-size:13px;color:var(--muted);line-height:2;">
+        <a href="https://dictionary.cambridge.org/pronunciation/english/hospital" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">hospital</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/help" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">help</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/have" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">have</a><br>
+        <span style="font-size:11px;">Soft breath — not like Spanish J</span>
       </div>
-      
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Question formation</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
-        </div>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;">
+      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">NG</div>
+      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Nasal ending</div>
+      <div style="font-size:13px;color:var(--muted);line-height:2;">
+        <a href="https://dictionary.cambridge.org/pronunciation/english/working" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">working</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/morning" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">morning</a><br>
+        <span style="font-size:11px;">From the back of the throat</span>
       </div>
-      
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Survival English</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
-        </div>
-      </div>
-      
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Common collocations</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
-        </div>
-      </div>
-      
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Writing basics</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
-        </div>
-      </div>
-      
-      <div class="nn-resource">
-        <div class="nn-resource-icon">&#128196;</div>
-        <div>
-          <h4>Study tips</h4>
-          <!-- RESOURCE: Embed PDF or add link when ready -->
-          <p>Coming soon</p>
+    </div>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Tricky vowel pairs — click to hear both</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">ship</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Short <b>i</b> — quick</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/ship" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">sheep</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Long <b>ee</b> — stretched</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/sheep" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">bed</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Short <b>e</b></div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/bed" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">bad</div>
+      <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Short <b>a</b> — mouth wide</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/bad" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Word stress — click each word to hear it</p>
+  <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="https://dictionary.cambridge.org/pronunciation/english/hospital" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">hospital</a>
+      <span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">HOS</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">pi</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">tal</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="https://dictionary.cambridge.org/pronunciation/english/patient" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">patient</a>
+      <span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">PA</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">tient</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="https://dictionary.cambridge.org/pronunciation/english/medicine" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">medicine</a>
+      <span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">MED</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">i</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">cine</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="https://dictionary.cambridge.org/pronunciation/english/emergency" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">emergency</a>
+      <span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">e</span><span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">MER</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">gen</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">cy</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="https://dictionary.cambridge.org/pronunciation/english/temperature" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">temperature</a>
+      <span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">TEM</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">per</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">a</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">ture</span>
+    </div>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Common mistakes for Spanish speakers</p>
+  <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
+    <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:14px 16px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:6px;">V vs B</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.7;">In Spanish, v and b sound the same. In English they are different.<br>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/very" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">very</a> — top teeth touch lower lip &nbsp;|&nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/berry" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">berry</a> — lips press together</p>
+    </div>
+    <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:14px 16px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:6px;">Silent letters</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.7;">
+      <a href="https://dictionary.cambridge.org/pronunciation/english/knife" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">knife</a> (silent k) &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/write" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">write</a> (silent w) &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/hour" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">hour</a> (silent h) &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/know" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">know</a> (silent k)</p>
+    </div>
+    <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:14px 16px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:6px;">Don't add a vowel before S</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.7;">Spanish speakers often say "e-special". Start straight on the S:<br>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/special" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">special</a> &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/study" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">study</a> &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/stress" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">stress</a></p>
+    </div>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Practice sentences — say these out loud every day</p>
+  <div style="display:flex;flex-direction:column;gap:8px;">
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);line-height:1.6;">"<b style="color:var(--navy);">Th</b>ank you for telling me. I <b style="color:var(--navy);">th</b>ink we should check your <a href="https://dictionary.cambridge.org/pronunciation/english/temperature" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">temperature</a>."</div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);line-height:1.6;">"<b style="color:var(--navy);">W</b>hat is <b style="color:var(--navy);">w</b>rong? <b style="color:var(--navy);">W</b>here does it hurt?"</div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);line-height:1.6;">"The <a href="https://dictionary.cambridge.org/pronunciation/english/patient" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">patient</a> in room three is having trouble <a href="https://dictionary.cambridge.org/pronunciation/english/breathing" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">breathing</a>."</div>
+    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);line-height:1.6;">"This is an <a href="https://dictionary.cambridge.org/pronunciation/english/emergency" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">emergency</a>. Please call the <a href="https://dictionary.cambridge.org/pronunciation/english/doctor" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">doctor</a> now."</div>
+  </div>
+  <p style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">Bold = stressed syllable or tricky sound. Underlined = click to hear pronunciation.</p>
+
+</div>
+
         </div>
       </div>
 
-      <div class="nn-resource" style="border-left:3px solid var(--teal);">
-        <div class="nn-resource-icon" style="background:rgba(117,212,208,0.2);">&#128197;</div>
-        <div>
-          <h4>Class schedule</h4>
-          <!-- LINK: Replace the # below with your Google Slides or Gamma URL when ready -->
-          <!-- Example: href="https://gamma.app/your-schedule-link" -->
-          <a href="#" target="_blank" style="font-size:13px;font-weight:700;color:var(--teal);">View current schedule &rarr;</a>
-          <p style="margin-top:4px;">Updated every term &mdash; always current</p>
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128336;</div>
+          <div class="nn-res-info">
+            <h4>Numbers, dates and time</h4>
+            <p>Essential for clinical settings and everyday life</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128218;</div>
+          <div class="nn-res-info">
+            <h4>Regular verb list</h4>
+            <p>The patterns that make English verbs predictable</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128218;</div>
+          <div class="nn-res-info">
+            <h4>Irregular verb list</h4>
+            <p>The verbs that break the rules — learn these by heart</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128196;</div>
+          <div class="nn-res-info">
+            <h4>Adjectives guide</h4>
+            <p>Describing people, places, symptoms and situations</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128196;</div>
+          <div class="nn-res-info">
+            <h4>Adverbs guide</h4>
+            <p>How to modify verbs and add detail to what you say</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128196;</div>
+          <div class="nn-res-info">
+            <h4>Prepositions guide</h4>
+            <p>In, on, at, by — the small words that cause big problems</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#10067;</div>
+          <div class="nn-res-info">
+            <h4>Question formation</h4>
+            <p>How to build any question in English</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#9888;&#65039;</div>
+          <div class="nn-res-info">
+            <h4>False friends</h4>
+            <p>Spanish words that look like English but aren't</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#127973;</div>
+          <div class="nn-res-info">
+            <h4>Medical vocabulary basics</h4>
+            <p>Body parts, symptoms and common conditions</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#127482;&#127480;</div>
+          <div class="nn-res-info">
+            <h4>Survival English</h4>
+            <p>The phrases you need from day one in the US</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128279;</div>
+          <div class="nn-res-info">
+            <h4>Common collocations</h4>
+            <p>Word pairs that go naturally together in English</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#128196;</div>
+          <div class="nn-res-info">
+            <h4>Phrasal verbs (basic)</h4>
+            <p>Come up, take off, put on — unavoidable in American English</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#9999;&#65039;</div>
+          <div class="nn-res-info">
+            <h4>Writing basics</h4>
+            <p>Emails, messages and simple reports</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+        </div>
+      </div>
+
+      <div class="nn-res-card">
+        <button class="nn-res-trigger" aria-expanded="false" onclick="toggleRes(this)">
+          <div class="nn-res-icon">&#127775;</div>
+          <div class="nn-res-info">
+            <h4>Study tips</h4>
+            <p>How to make the most of your learning time</p>
+          </div>
+          <div class="nn-res-chevron">&#9660;</div>
+        </button>
+        <div class="nn-res-body">
+          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
         </div>
       </div>
     </div>
@@ -1095,6 +1359,20 @@ window.addEventListener("scroll", () => {
     if (a.getAttribute("href") === "#" + cur) a.classList.add("active");
   });
 });
+</script>
+
+<script>
+function toggleRes(btn){
+  const body = btn.nextElementSibling;
+  const expanded = btn.getAttribute("aria-expanded") === "true";
+  if(expanded){
+    btn.setAttribute("aria-expanded","false");
+    body.classList.remove("open");
+  } else {
+    btn.setAttribute("aria-expanded","true");
+    body.classList.add("open");
+  }
+}
 </script>
 </body>
 </html>
