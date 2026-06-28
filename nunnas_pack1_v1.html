@@ -18,7 +18,8 @@ a:hover{text-decoration:underline;}
 /* NAV */
 .nn-nav{position:sticky;top:0;z-index:100;background:var(--navy);padding:0 32px;display:flex;align-items:center;justify-content:space-between;min-height:60px;border-bottom:3px solid var(--teal);}
 .nn-nav-logo{height:28px;}
-.nn-nav-links{display:flex;gap:4px;list-style:none;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.nn-nav-links{display:flex;gap:4px;list-style:none;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;}
+.nn-nav-links::-webkit-scrollbar{display:none;}
 .nn-nav-links a{color:rgba(255,255,255,0.65);font-size:12px;font-weight:700;letter-spacing:0.5px;padding:8px 10px;border-radius:6px;white-space:nowrap;transition:color 0.2s,background 0.2s;}
 .nn-nav-links a:hover,.nn-nav-links a.active{color:var(--teal);background:rgba(117,212,208,0.1);text-decoration:none;}
 
@@ -425,8 +426,8 @@ a:hover{text-decoration:underline;}
       <h3>Google Classroom</h3>
       <p>This is where your learning lives. You were invited before day one &mdash; check your email for the link. Inside you&rsquo;ll find:</p>
       <ul>
-        <li>The Grammar Library &mdash; reference materials for every topic</li>
-        <li>The Listening Library &mdash; authentic audio and exercises</li>
+        <li>The Grammar Library &mdash; reference materials for every topic <a href="https://classroom.google.com/c/ODU4NDkwNzk0OTM5" target="_blank" style="color:var(--teal);font-weight:700;">Open &rarr;</a></li>
+        <li>The Listening Library &mdash; authentic audio and exercises <a href="https://classroom.google.com/c/Nzk4MTQ4MTQ3MTk4" target="_blank" style="color:var(--teal);font-weight:700;">Open &rarr;</a></li>
         <li>Your weekly assignments</li>
         <li>Recordings of all your live classes</li>
       </ul>
