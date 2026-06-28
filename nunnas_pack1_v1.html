@@ -979,7 +979,7 @@ a:hover{text-decoration:underline;}
         </button>
         <div class="nn-res-body">
           
-<div style="padding:24px 20px;">
+<div style="padding:24px 20px;font-family:'Lato',sans-serif;">
 
   <div style="background:#304861;border-radius:12px;padding:20px 22px;margin-bottom:20px;">
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:8px;">
@@ -988,12 +988,8 @@ a:hover{text-decoration:underline;}
         <div style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:3px;">Written especially for Spanish speakers</div>
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button onclick="window.print()" style="display:flex;align-items:center;gap:6px;background:#75D4D0;color:#304861;font-family:'Nunito',sans-serif;font-size:12px;font-weight:800;padding:8px 16px;border-radius:8px;border:none;cursor:pointer;">
-          &#128196; Save as PDF
-        </button>
-        <button onclick="window.print()" style="display:flex;align-items:center;gap:6px;background:rgba(117,212,208,0.15);color:#304861;font-family:'Nunito',sans-serif;font-size:12px;font-weight:800;padding:8px 16px;border-radius:8px;border:1px solid rgba(117,212,208,0.4);cursor:pointer;">
-          &#128438; Print
-        </button>
+        <button onclick="window.print()" style="display:flex;align-items:center;gap:6px;background:#75D4D0;color:#304861;font-family:'Nunito',sans-serif;font-size:12px;font-weight:800;padding:8px 16px;border-radius:8px;border:none;cursor:pointer;">&#128196; Save as PDF</button>
+        <button onclick="window.print()" style="display:flex;align-items:center;gap:6px;background:rgba(117,212,208,0.15);color:#304861;font-family:'Nunito',sans-serif;font-size:12px;font-weight:800;padding:8px 16px;border-radius:8px;border:1px solid rgba(117,212,208,0.4);cursor:pointer;">&#128438; Print</button>
       </div>
     </div>
     <p style="font-size:11px;color:rgba(255,255,255,0.35);font-style:italic;">Audio links open Cambridge Dictionary. Luke's own recordings coming soon. Click any underlined word to hear it.</p>
@@ -1001,94 +997,193 @@ a:hover{text-decoration:underline;}
 
   <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Sounds that don't exist in Spanish</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:24px;">
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;">
-      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">TH</div>
-      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Two sounds</div>
-      <div style="font-size:13px;color:var(--muted);line-height:2;">
-        <a href="https://dictionary.cambridge.org/pronunciation/english/think" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">think</a>,
-        <a href="https://dictionary.cambridge.org/pronunciation/english/thank" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">thank</a> — soft<br>
-        <a href="https://dictionary.cambridge.org/pronunciation/english/the" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">the</a>,
-        <a href="https://dictionary.cambridge.org/pronunciation/english/this" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">this</a>,
-        <a href="https://dictionary.cambridge.org/pronunciation/english/that" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">that</a> — voiced<br>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;">
+      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">TH</div>
+      <div style="font-size:11px;color:#8a9db0;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Two sounds</div>
+      <div style="font-size:13px;color:#8a9db0;line-height:2;">
+        <a href="https://dictionary.cambridge.org/pronunciation/english/think" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">think</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/thank" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">thank</a> — soft<br>
+        <a href="https://dictionary.cambridge.org/pronunciation/english/the" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">the</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/this" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">this</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/that" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">that</a> — voiced<br>
         <span style="font-size:11px;">Tongue touches teeth</span>
       </div>
     </div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;">
-      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">W</div>
-      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Not like V</div>
-      <div style="font-size:13px;color:var(--muted);line-height:2;">
-        <a href="https://dictionary.cambridge.org/pronunciation/english/water" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">water</a>,
-        <a href="https://dictionary.cambridge.org/pronunciation/english/work" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">work</a>,
-        <a href="https://dictionary.cambridge.org/pronunciation/english/week" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">week</a><br>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;">
+      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">W</div>
+      <div style="font-size:11px;color:#8a9db0;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Not like V</div>
+      <div style="font-size:13px;color:#8a9db0;line-height:2;">
+        <a href="https://dictionary.cambridge.org/pronunciation/english/water" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">water</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/work" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">work</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/week" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">week</a><br>
         <span style="font-size:11px;">Round lips as if whistling</span>
       </div>
     </div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;">
-      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">H</div>
-      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Breathe out</div>
-      <div style="font-size:13px;color:var(--muted);line-height:2;">
-        <a href="https://dictionary.cambridge.org/pronunciation/english/hospital" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">hospital</a>,
-        <a href="https://dictionary.cambridge.org/pronunciation/english/help" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">help</a>,
-        <a href="https://dictionary.cambridge.org/pronunciation/english/have" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">have</a><br>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;">
+      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">H</div>
+      <div style="font-size:11px;color:#8a9db0;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Breathe out</div>
+      <div style="font-size:13px;color:#8a9db0;line-height:2;">
+        <a href="https://dictionary.cambridge.org/pronunciation/english/hospital" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">hospital</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/help" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">help</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/have" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">have</a><br>
         <span style="font-size:11px;">Soft breath — not like Spanish J</span>
       </div>
     </div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;">
-      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">NG</div>
-      <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Nasal ending</div>
-      <div style="font-size:13px;color:var(--muted);line-height:2;">
-        <a href="https://dictionary.cambridge.org/pronunciation/english/working" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">working</a>,
-        <a href="https://dictionary.cambridge.org/pronunciation/english/morning" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">morning</a><br>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;">
+      <div style="font-size:20px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">NG</div>
+      <div style="font-size:11px;color:#8a9db0;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Nasal ending</div>
+      <div style="font-size:13px;color:#8a9db0;line-height:2;">
+        <a href="https://dictionary.cambridge.org/pronunciation/english/working" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">working</a>,
+        <a href="https://dictionary.cambridge.org/pronunciation/english/morning" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">morning</a><br>
         <span style="font-size:11px;">From the back of the throat</span>
       </div>
     </div>
   </div>
 
   <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Tricky vowel pairs — click to hear both</p>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:16px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">Spanish speaker tip</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">English has many more vowel sounds than Spanish. These pairs look similar but sound very different — and mean completely different things. Getting them wrong can cause confusion in a clinical setting.</p>
+  </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;">
-      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">ship</div>
-      <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Short <b>i</b> — quick</div>
-      <a href="https://dictionary.cambridge.org/pronunciation/english/ship" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">ship</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>i</b> — quick</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/ship" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
     </div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;">
-      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">sheep</div>
-      <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Long <b>ee</b> — stretched</div>
-      <a href="https://dictionary.cambridge.org/pronunciation/english/sheep" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">sheep</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Long <b>ee</b> — stretched</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/sheep" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
     </div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;">
-      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">bed</div>
-      <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Short <b>e</b></div>
-      <a href="https://dictionary.cambridge.org/pronunciation/english/bed" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">bed</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>e</b></div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/bed" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
     </div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;">
-      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:var(--navy);margin-bottom:4px;">bad</div>
-      <div style="font-size:12px;color:var(--muted);margin-bottom:8px;">Short <b>a</b> — mouth wide</div>
-      <a href="https://dictionary.cambridge.org/pronunciation/english/bad" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:var(--navy);color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">bad</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>a</b> — mouth wide</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/bad" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
     </div>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">full</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>oo</b></div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/full" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">fool</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Long <b>oo</b></div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/fool" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">cat</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>a</b> — mouth wide open</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/cat" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">cut</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>u</b> — middle of mouth</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/cut" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">heat</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Long <b>ee</b> — stretched</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/heat" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">hit</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>i</b> — quick</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/hit" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">live</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>i</b> — to be alive</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/live" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">leave</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Long <b>ee</b> — to go away</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/leave" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">bit</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>i</b> — a small piece</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/bit" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">beat</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Long <b>ee</b> — heartbeat</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/beat" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">not</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>o</b> — negative</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/not" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">note</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Long <b>o</b> — a written note</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/note" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">cup</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>u</b></div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/cup" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">cop</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>o</b></div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/cop" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">man</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>a</b></div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/man" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:12px;padding:14px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;font-family:'Nunito',sans-serif;color:#304861;margin-bottom:4px;">men</div>
+      <div style="font-size:12px;color:#8a9db0;margin-bottom:8px;">Short <b>e</b></div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/men" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:100px;text-decoration:none;">&#128266; Listen</a>
+    </div>
+
   </div>
 
   <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Word stress — click each word to hear it</p>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:14px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">Why this matters for nurses</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">Saying the wrong syllable louder can make a word unrecognisable to a patient or colleague. Click each word to hear the correct stress.</p>
+  </div>
   <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
     <div style="display:flex;align-items:center;gap:10px;">
-      <a href="https://dictionary.cambridge.org/pronunciation/english/hospital" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">hospital</a>
-      <span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">HOS</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">pi</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">tal</span>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/hospital" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:#304861;min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">hospital</a>
+      <span style="background:#304861;color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">HOS</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">pi</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">tal</span>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <a href="https://dictionary.cambridge.org/pronunciation/english/patient" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">patient</a>
-      <span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">PA</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">tient</span>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/patient" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:#304861;min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">patient</a>
+      <span style="background:#304861;color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">PA</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">tient</span>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <a href="https://dictionary.cambridge.org/pronunciation/english/medicine" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">medicine</a>
-      <span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">MED</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">i</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">cine</span>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/medicine" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:#304861;min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">medicine</a>
+      <span style="background:#304861;color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">MED</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">i</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">cine</span>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <a href="https://dictionary.cambridge.org/pronunciation/english/emergency" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">emergency</a>
-      <span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">e</span><span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">MER</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">gen</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">cy</span>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/emergency" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:#304861;min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">emergency</a>
+      <span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">e</span><span style="background:#304861;color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">MER</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">gen</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">cy</span>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <a href="https://dictionary.cambridge.org/pronunciation/english/temperature" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:var(--navy);min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">temperature</a>
-      <span style="background:var(--navy);color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">TEM</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">per</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">a</span><span style="background:var(--linen);border:1px solid var(--border);padding:3px 10px;border-radius:6px;font-size:12px;">ture</span>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/temperature" target="_blank" style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:700;color:#304861;min-width:130px;border-bottom:1px dashed #75D4D0;text-decoration:none;">temperature</a>
+      <span style="background:#304861;color:white;padding:3px 10px;border-radius:6px;font-size:12px;font-weight:700;">TEM</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">per</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">a</span><span style="background:#F8F7F1;border:1px solid rgba(48,72,97,0.1);padding:3px 10px;border-radius:6px;font-size:12px;">ture</span>
     </div>
   </div>
 
@@ -1096,38 +1191,45 @@ a:hover{text-decoration:underline;}
   <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
     <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:14px 16px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:6px;">V vs B</div>
-      <p style="font-size:13px;color:var(--muted);line-height:1.7;">In Spanish, v and b sound the same. In English they are different.<br>
-      <a href="https://dictionary.cambridge.org/pronunciation/english/very" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">very</a> — top teeth touch lower lip &nbsp;|&nbsp;
-      <a href="https://dictionary.cambridge.org/pronunciation/english/berry" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">berry</a> — lips press together</p>
+      <p style="font-size:13px;color:#8a9db0;line-height:1.7;">In Spanish, v and b sound the same. In English they are different.<br>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/very" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">very</a> — top teeth touch lower lip &nbsp;|&nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/berry" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">berry</a> — lips press together</p>
     </div>
     <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:14px 16px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:6px;">Silent letters</div>
-      <p style="font-size:13px;color:var(--muted);line-height:1.7;">
-      <a href="https://dictionary.cambridge.org/pronunciation/english/knife" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">knife</a> (silent k) &nbsp;
-      <a href="https://dictionary.cambridge.org/pronunciation/english/write" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">write</a> (silent w) &nbsp;
-      <a href="https://dictionary.cambridge.org/pronunciation/english/hour" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">hour</a> (silent h) &nbsp;
-      <a href="https://dictionary.cambridge.org/pronunciation/english/know" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">know</a> (silent k)</p>
+      <p style="font-size:13px;color:#8a9db0;line-height:1.7;">
+      <a href="https://dictionary.cambridge.org/pronunciation/english/knife" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">knife</a> (silent k) &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/write" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">write</a> (silent w) &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/hour" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">hour</a> (silent h) &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/know" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">know</a> (silent k)</p>
     </div>
     <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:14px 16px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:6px;">Don't add a vowel before S</div>
-      <p style="font-size:13px;color:var(--muted);line-height:1.7;">Spanish speakers often say "e-special". Start straight on the S:<br>
-      <a href="https://dictionary.cambridge.org/pronunciation/english/special" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">special</a> &nbsp;
-      <a href="https://dictionary.cambridge.org/pronunciation/english/study" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">study</a> &nbsp;
-      <a href="https://dictionary.cambridge.org/pronunciation/english/stress" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">stress</a></p>
+      <p style="font-size:13px;color:#8a9db0;line-height:1.7;">Spanish speakers often say "e-special". Start straight on the S:<br>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/special" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">special</a> &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/study" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">study</a> &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/stress" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">stress</a></p>
+    </div>
+    <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:14px 16px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:6px;">The schwa — most common sound in English</div>
+      <p style="font-size:13px;color:#8a9db0;line-height:1.7;">The weak <b style="color:#304861;">uh</b> sound in unstressed syllables:<br>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/about" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">about</a> &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/doctor" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">doctor</a> &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/patient" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">patient</a> &nbsp;
+      <a href="https://dictionary.cambridge.org/pronunciation/english/nursing" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">nursing</a></p>
     </div>
   </div>
 
   <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Practice sentences — say these out loud every day</p>
   <div style="display:flex;flex-direction:column;gap:8px;">
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);line-height:1.6;">"<b style="color:var(--navy);">Th</b>ank you for telling me. I <b style="color:var(--navy);">th</b>ink we should check your <a href="https://dictionary.cambridge.org/pronunciation/english/temperature" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">temperature</a>."</div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);line-height:1.6;">"<b style="color:var(--navy);">W</b>hat is <b style="color:var(--navy);">w</b>rong? <b style="color:var(--navy);">W</b>here does it hurt?"</div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);line-height:1.6;">"The <a href="https://dictionary.cambridge.org/pronunciation/english/patient" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">patient</a> in room three is having trouble <a href="https://dictionary.cambridge.org/pronunciation/english/breathing" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">breathing</a>."</div>
-    <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);line-height:1.6;">"This is an <a href="https://dictionary.cambridge.org/pronunciation/english/emergency" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">emergency</a>. Please call the <a href="https://dictionary.cambridge.org/pronunciation/english/doctor" target="_blank" style="color:var(--navy);font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">doctor</a> now."</div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;font-size:14px;color:#8a9db0;line-height:1.6;">"<b style="color:#304861;">Th</b>ank you for telling me. I <b style="color:#304861;">th</b>ink we should check your <a href="https://dictionary.cambridge.org/pronunciation/english/temperature" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">temperature</a>."</div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;font-size:14px;color:#8a9db0;line-height:1.6;">"<b style="color:#304861;">W</b>hat is <b style="color:#304861;">w</b>rong? <b style="color:#304861;">W</b>here does it hurt?"</div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;font-size:14px;color:#8a9db0;line-height:1.6;">"The <a href="https://dictionary.cambridge.org/pronunciation/english/patient" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">patient</a> in room three is having trouble <a href="https://dictionary.cambridge.org/pronunciation/english/breathing" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">breathing</a>."</div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;font-size:14px;color:#8a9db0;line-height:1.6;">"This is an <a href="https://dictionary.cambridge.org/pronunciation/english/emergency" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">emergency</a>. Please call the <a href="https://dictionary.cambridge.org/pronunciation/english/doctor" target="_blank" style="color:#304861;font-weight:700;border-bottom:1px dashed #75D4D0;text-decoration:none;">doctor</a> now."</div>
   </div>
-  <p style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic;">Bold = stressed syllable or tricky sound. Underlined = click to hear pronunciation.</p>
+  <p style="font-size:11px;color:#8a9db0;margin-top:10px;font-style:italic;">Bold = stressed syllable or tricky sound. Underlined = click to hear pronunciation.</p>
 
 </div>
-
         </div>
       </div>
 
@@ -1136,12 +1238,496 @@ a:hover{text-decoration:underline;}
           <div class="nn-res-icon">&#128336;</div>
           <div class="nn-res-info">
             <h4>Numbers, dates and time</h4>
-            <p>Essential for clinical settings and everyday life</p>
+            <p>Essential for clinical settings and everyday life in the US</p>
           </div>
           <div class="nn-res-chevron">&#9660;</div>
         </button>
         <div class="nn-res-body">
-          <div class="nn-res-coming">Coming soon &mdash; check back shortly.</div>
+          
+<div style="padding:24px 20px;font-family:'Lato',sans-serif;">
+
+  <div style="background:#304861;border-radius:12px;padding:20px 22px;margin-bottom:20px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:8px;">
+      <div>
+        <div style="font-family:'Nunito',sans-serif;font-size:18px;font-weight:800;color:white;">Numbers, dates and time</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:3px;">From zero to billions — essential for clinical settings and everyday life in the US</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button onclick="window.print()" style="display:flex;align-items:center;gap:6px;background:#75D4D0;color:#304861;font-family:'Nunito',sans-serif;font-size:12px;font-weight:800;padding:8px 16px;border-radius:8px;border:none;cursor:pointer;">&#128196; Save as PDF</button>
+        <button onclick="window.print()" style="display:flex;align-items:center;gap:6px;background:rgba(117,212,208,0.15);color:#304861;font-family:'Nunito',sans-serif;font-size:12px;font-weight:800;padding:8px 16px;border-radius:8px;border:1px solid rgba(117,212,208,0.4);cursor:pointer;">&#128438; Print</button>
+      </div>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,0.35);font-style:italic;">Audio links open Cambridge Dictionary. Luke's own recordings coming soon.</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">0 — 20</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:16px;">
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">0</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">zero</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/zero" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">1</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">one</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/one" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">2</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">two</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/two" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">3</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">three</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/three" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">4</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">four</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/four" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">5</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">five</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/five" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">6</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">six</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/six" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">7</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">seven</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/seven" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">8</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">eight</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/eight" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">9</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">nine</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/nine" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">10</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">ten</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/ten" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">11</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">eleven</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/eleven" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">12</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">twelve</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/twelve" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">13</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">thirteen</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/thirteen" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">14</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">fourteen</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/fourteen" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">15</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">fifteen</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/fifteen" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">16</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">sixteen</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/sixteen" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">17</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">seventeen</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/seventeen" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">18</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">eighteen</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/eighteen" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">19</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">nineteen</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/nineteen" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;display:block;margin-bottom:2px;">20</div>
+      <div style="font-size:12px;color:#8a9db0;display:block;margin-bottom:6px;">twenty</div>
+      <a href="https://dictionary.cambridge.org/pronunciation/english/twenty" target="_blank" style="display:inline-flex;align-items:center;gap:4px;background:#304861;color:#75D4D0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-decoration:none;">&#128266; listen</a>
+    </div>
+  </div>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">13 vs 30 — critical in clinical settings</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">Thirteen (13) and thirty (30) sound very similar. The stress is different — thirTEEN vs THIRty. 13mg is not the same as 30mg.</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Tens to 100</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:24px;">
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">20</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">21</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-one</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">30</div>
+      <div style="font-size:12px;color:#8a9db0;">thirty</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">40</div>
+      <div style="font-size:12px;color:#8a9db0;">forty</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">50</div>
+      <div style="font-size:12px;color:#8a9db0;">fifty</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">60</div>
+      <div style="font-size:12px;color:#8a9db0;">sixty</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">70</div>
+      <div style="font-size:12px;color:#8a9db0;">seventy</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">80</div>
+      <div style="font-size:12px;color:#8a9db0;">eighty</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">90</div>
+      <div style="font-size:12px;color:#8a9db0;">ninety</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">100</div>
+      <div style="font-size:12px;color:#8a9db0;">one hundred</div>
+    </div>
+  </div>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">Spelling notes</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">forty (40) has no U — not <s>fourty</s>. &nbsp; eighty (80) drops the T from eight.</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Hundreds and thousands</p>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:90px;">100</span>
+    <span style="font-size:13px;color:#304861;flex:1;">one hundred</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:90px;">250</span>
+    <span style="font-size:13px;color:#304861;flex:1;">two hundred and fifty</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:90px;">999</span>
+    <span style="font-size:13px;color:#304861;flex:1;">nine hundred and ninety-nine</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:90px;">1,000</span>
+    <span style="font-size:13px;color:#304861;flex:1;">one thousand</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:90px;">1,500</span>
+    <span style="font-size:13px;color:#304861;flex:1;">one thousand five hundred / fifteen hundred</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:90px;">10,000</span>
+    <span style="font-size:13px;color:#304861;flex:1;">ten thousand</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:90px;">100,000</span>
+    <span style="font-size:13px;color:#304861;flex:1;">one hundred thousand</span>
+  </div>
+  <div style="background:rgba(168,159,255,0.08);border:1px solid rgba(168,159,255,0.2);border-radius:10px;padding:12px 16px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#A89FFF;margin-bottom:6px;">Clinical examples</div>
+    <p style="font-size:13px;color:#304861;line-height:1.65;">"The patient's heart rate is <b>one hundred and two</b> beats per minute."<br>
+    "The dosage is <b>five hundred</b> milligrams twice daily."<br>
+    "There are <b>two thousand</b> calories in the patient's diet plan."</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Millions and billions</p>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:120px;">1,000,000</span>
+    <span style="font-size:13px;color:#304861;">one million</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:120px;">2,500,000</span>
+    <span style="font-size:13px;color:#304861;">two and a half million</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:120px;">1,000,000,000</span>
+    <span style="font-size:13px;color:#304861;">one billion</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:120px;">3,200,000,000</span>
+    <span style="font-size:13px;color:#304861;">three point two billion</span>
+  </div>
+  <div style="background:rgba(168,159,255,0.08);border:1px solid rgba(168,159,255,0.2);border-radius:10px;padding:12px 16px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#A89FFF;margin-bottom:6px;">You will hear these in the US</div>
+    <p style="font-size:13px;color:#304861;line-height:1.65;">"The hospital budget is <b>four hundred million dollars</b>."<br>
+    "The insurance claim was valued at <b>one point two million dollars</b>."<br>
+    "There are <b>three hundred and thirty million</b> people in the United States."</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Decimals and fractions</p>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:12px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">Critical for medication doses</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">In the US, a decimal point is written as a dot (.), not a comma. Always say "point" for the decimal: 0.5 = "zero point five".</p>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:80px;">0.5</span>
+    <span style="font-size:13px;color:#304861;">zero point five — half a milligram</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:80px;">1.25</span>
+    <span style="font-size:13px;color:#304861;">one point two five — one and a quarter tablets</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:80px;">½</span>
+    <span style="font-size:13px;color:#304861;">a half / one half</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:80px;">¼</span>
+    <span style="font-size:13px;color:#304861;">a quarter / one quarter</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:80px;">¾</span>
+    <span style="font-size:13px;color:#304861;">three quarters</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#304861;min-width:80px;">98.6°F</span>
+    <span style="font-size:13px;color:#304861;">ninety-eight point six degrees — normal body temperature</span>
+  </div>
+  <div style="margin-bottom:24px;"></div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Ordinal numbers — for dates, floors and rooms</p>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:12px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">What are ordinal numbers?</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">Ordinal numbers show position or order. You use them for dates ("the <b>third</b> of July"), floor numbers ("the patient is on the <b>fourth</b> floor"), and room numbers.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:12px;">
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">1st</div>
+      <div style="font-size:12px;color:#8a9db0;">first</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">2nd</div>
+      <div style="font-size:12px;color:#8a9db0;">second</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">3rd</div>
+      <div style="font-size:12px;color:#8a9db0;">third</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">4th</div>
+      <div style="font-size:12px;color:#8a9db0;">fourth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">5th</div>
+      <div style="font-size:12px;color:#8a9db0;">fifth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">6th</div>
+      <div style="font-size:12px;color:#8a9db0;">sixth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">7th</div>
+      <div style="font-size:12px;color:#8a9db0;">seventh</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">8th</div>
+      <div style="font-size:12px;color:#8a9db0;">eighth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">9th</div>
+      <div style="font-size:12px;color:#8a9db0;">ninth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">10th</div>
+      <div style="font-size:12px;color:#8a9db0;">tenth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">11th</div>
+      <div style="font-size:12px;color:#8a9db0;">eleventh</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">12th</div>
+      <div style="font-size:12px;color:#8a9db0;">twelfth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">13th</div>
+      <div style="font-size:12px;color:#8a9db0;">thirteenth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">14th</div>
+      <div style="font-size:12px;color:#8a9db0;">fourteenth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">15th</div>
+      <div style="font-size:12px;color:#8a9db0;">fifteenth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">16th</div>
+      <div style="font-size:12px;color:#8a9db0;">sixteenth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">17th</div>
+      <div style="font-size:12px;color:#8a9db0;">seventeenth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">18th</div>
+      <div style="font-size:12px;color:#8a9db0;">eighteenth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">19th</div>
+      <div style="font-size:12px;color:#8a9db0;">nineteenth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">20th</div>
+      <div style="font-size:12px;color:#8a9db0;">twentieth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">21st</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-first</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">22nd</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-second</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">23rd</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-third</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">24th</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-fourth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">25th</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-fifth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">26th</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-sixth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">27th</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-seventh</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">28th</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-eighth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">29th</div>
+      <div style="font-size:12px;color:#8a9db0;">twenty-ninth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">30th</div>
+      <div style="font-size:12px;color:#8a9db0;">thirtieth</div>
+    </div>
+    <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 14px;">
+      <div style="font-family:'Nunito',sans-serif;font-size:20px;font-weight:800;color:#304861;">31st</div>
+      <div style="font-size:12px;color:#8a9db0;">thirty-first</div>
+    </div>
+  </div>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">The pattern</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">Most ordinals just add -th (fourth, sixth, seventh...). Watch the irregular ones: <b>first, second, third, fifth, eighth, ninth, twelfth</b>.</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Dates — American format</p>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:12px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">Important — US dates are different</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">In the US the month comes first, then the day, then the year. July 3rd = 7/3 in the US — in Mexico it would be 3/7. This can cause serious errors on patient records. Always confirm the format.</p>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:110px;">July 3, 2025</span>
+    <span style="font-size:13px;color:#304861;">July third, twenty twenty-five</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:110px;">March 21, 2026</span>
+    <span style="font-size:13px;color:#304861;">March twenty-first, twenty twenty-six</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:110px;">01/15/2025</span>
+    <span style="font-size:13px;color:#304861;">January fifteenth, twenty twenty-five</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:110px;">12/31/2024</span>
+    <span style="font-size:13px;color:#304861;">December thirty-first, twenty twenty-four</span>
+  </div>
+  <div style="background:rgba(168,159,255,0.08);border:1px solid rgba(168,159,255,0.2);border-radius:10px;padding:12px 16px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#A89FFF;margin-bottom:6px;">On the ward</div>
+    <p style="font-size:13px;color:#304861;line-height:1.65;">"The patient was admitted on <b>September second</b>."<br>
+    "The prescription expires on <b>March fifteenth, twenty twenty-six</b>."<br>
+    "Date of birth: <b>April seventh, nineteen eighty-five</b>."</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Time — 12-hour clock and military time</p>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:12px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">AM and PM</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">The US uses a 12-hour clock in everyday speech. AM = morning (midnight to noon). PM = afternoon and evening (noon to midnight). Hospitals use military time (24-hour) in written records to avoid errors.</p>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:80px;">6:00 AM</span>
+    <span style="font-size:13px;color:#304861;">six o'clock in the morning / oh-six-hundred (0600)</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:80px;">9:30 AM</span>
+    <span style="font-size:13px;color:#304861;">nine thirty in the morning / oh-nine-thirty (0930)</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:80px;">12:00 PM</span>
+    <span style="font-size:13px;color:#304861;">noon / twelve o'clock / twelve hundred (1200)</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:80px;">2:15 PM</span>
+    <span style="font-size:13px;color:#304861;">two fifteen in the afternoon / fourteen fifteen (1415)</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:80px;">6:45 PM</span>
+    <span style="font-size:13px;color:#304861;">six forty-five in the evening / eighteen forty-five (1845)</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;margin-bottom:8px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;color:#304861;min-width:80px;">12:00 AM</span>
+    <span style="font-size:13px;color:#304861;">midnight / zero hundred / twenty-four hundred (0000)</span>
+  </div>
+  <div style="background:rgba(168,159,255,0.08);border:1px solid rgba(168,159,255,0.2);border-radius:10px;padding:12px 16px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#A89FFF;margin-bottom:6px;">On the ward</div>
+    <p style="font-size:13px;color:#304861;line-height:1.65;">"Medication was administered at <b>oh-eight-hundred</b> (0800)."<br>
+    "The patient's next observation is at <b>two PM</b>."<br>
+    "Surgery is scheduled for <b>seven thirty AM</b> tomorrow."</p>
+  </div>
+
+  <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#75D4D0;margin-bottom:12px;">Phone numbers — how Americans say them</p>
+  <div style="background:rgba(117,212,208,0.08);border:1px solid rgba(117,212,208,0.2);border-radius:10px;padding:12px 16px;margin-bottom:12px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#75D4D0;margin-bottom:5px;">Digit by digit</div>
+    <p style="font-size:13px;color:#304861;line-height:1.6;">Americans say phone numbers one digit at a time. The area code (first 3 digits) comes first, then a pause, then three digits, then four digits.</p>
+  </div>
+  <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;font-size:14px;color:#8a9db0;line-height:1.6;margin-bottom:8px;"><b style="color:#304861;">+1 (555) 867-5309</b><br>Plus one, five five five, eight six seven, five three oh nine</div>
+  <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;font-size:14px;color:#8a9db0;line-height:1.6;margin-bottom:8px;"><b style="color:#304861;">911</b> — nine one one (emergency services)</div>
+  <div style="background:white;border:1px solid rgba(48,72,97,0.1);border-radius:10px;padding:12px 16px;font-size:14px;color:#8a9db0;line-height:1.6;margin-bottom:16px;"><b style="color:#304861;">1-800 numbers</b> — one eight hundred, then the remaining digits</div>
+  <div style="background:rgba(168,159,255,0.08);border:1px solid rgba(168,159,255,0.2);border-radius:10px;padding:12px 16px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#A89FFF;margin-bottom:6px;">Useful phrases</div>
+    <p style="font-size:13px;color:#304861;line-height:1.65;">"Could you repeat that number?"<br>
+    "Let me read that back to you — was that five five five?"<br>
+    "The hospital main number is area code three one two..."</p>
+  </div>
+
+</div>
         </div>
       </div>
 
